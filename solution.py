@@ -11,7 +11,7 @@ def solution(x: np.array, y: np.array) -> bool:
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
 
-    pval_tz = 0.03
+    pval_tz = 0.09
     alternative = 'less'  
     pval = ks_2samp(x, y, alternative="two-sided", method='auto').pvalue
     #print(1-pval)
