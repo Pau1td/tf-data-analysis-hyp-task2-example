@@ -14,7 +14,7 @@ def solution(x: np.array, y: np.array) -> bool:
     pval_tz = 0.03
     alternative = 'less'  
     pval = ks_2samp(x, y, alternative="two-sided", method='auto').pvalue
-    print(1-pval)
+    #print(1-pval)
 
 
     if pval <= 1-pval_tz:
